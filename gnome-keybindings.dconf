@@ -1,0 +1,12 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+
+[custom-keybindings/custom0]
+binding='Print'
+command='flameshot gui'
+name='flameshot'
+
+[custom-keybindings/custom1]
+binding='<Super>t'
+command='gnome-terminal --full-screen -- zsh'
+name='Fullscreen zsh terminal'
