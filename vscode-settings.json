@@ -1,0 +1,67 @@
+{
+    "python.analysis.typeCheckingMode": "standard",
+    "editor.fontFamily": "'Fira Code iScript', 'Fira Code', monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "'MesloLGS NF'",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "punctuation.definition.comment",
+                    "keyword",
+                    "storage",
+                    "entity.name.function",
+                    "entity.name.method",
+                    "entity.other.attribute-name"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": [
+                    "support.function",
+                    "support.function.misc",
+                    "support.function.magic.python",
+                    "meta.function-call.method",
+                    "variable.function",
+                    "entity.name.class",
+                    "entity.other.inherited-class",
+                    "support.class",
+                    "meta.function-call.constructor",
+                    "entity.name.struct",
+                    "entity.name.enum",
+                    "meta.type",
+                    "meta.type-alias",
+                    "support.type",
+                    "entity.name.type",
+                    "variable.parameter",
+                    "meta.function.parameters",
+                    "variable.parameter.function.language.special.self.python",
+                    "variable.language.special.self.python",
+                    "entity.name.function.decorator.python",
+                    "punctuation.definition.decorator.python",
+                    "meta.indexed-name.python",
+                    "meta.item-access.python"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "workbench.startupEditor": "none",
+    "editor.minimap.enabled": false,
+    "workbench.panel.showLabels": false,
+    "workbench.secondarySideBar.showLabels": false,
+    "chat.viewSessions.orientation": "stacked",
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "files.autoSave": "afterDelay",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.html": "workbench.editor.browser"
+    },
+    "workbench.iconTheme": "material-icon-theme"
+}

@@ -51,6 +51,12 @@ cp "$HERE/p10k.zsh" "$HOME/.p10k.zsh"
 mkdir -p "$HOME/.config/neofetch"
 cp "$HERE/neofetch.conf" "$HOME/.config/neofetch/config.conf"
 
+echo "==> VS Code user settings (backing up existing)"
+mkdir -p "$HOME/.config/Code/User"
+[ -f "$HOME/.config/Code/User/settings.json" ] && \
+  cp "$HOME/.config/Code/User/settings.json" "$HOME/.config/Code/User/settings.json.bak.$ts"
+cp "$HERE/vscode-settings.json" "$HOME/.config/Code/User/settings.json"
+
 echo "==> GNOME Terminal theme + keyboard shortcuts"
 if command -v dconf >/dev/null 2>&1; then
   dconf load /org/gnome/terminal/ < "$HERE/gnome-terminal.dconf" || true
@@ -64,3 +70,8 @@ echo "==> Set zsh as default shell"
 echo
 echo "Done. Log out/in (or restart your terminal). Set the terminal font to"
 echo "'MesloLGS NF 14' if it didn't apply, and run 'p10k configure' to re-tune if desired."
+echo
+echo "Note: vscode-settings.json assumes the 'Fira Code iScript' font is installed"
+echo "under ~/.local/share/fonts/ — this script does not fetch it. Fully quit and"
+echo "relaunch VS Code (not just Reload Window) after installing new fonts so the"
+echo "editor picks them up."

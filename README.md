@@ -14,6 +14,7 @@ files so it reproduces 1:1 — not an approximation.
 | `neofetch.conf` | `~/.config/neofetch/config.conf` |
 | `gnome-terminal.dconf` | Exact GNOME Terminal profiles (all Catppuccin variants; default = Mocha) |
 | `gnome-keybindings.dconf` | GNOME custom shortcuts (Super+T, Print) |
+| `vscode-settings.json` | `~/.config/Code/User/settings.json` — cursive Fira Code iScript for keywords/comments/declarations, MesloLGS NF terminal font |
 | `REPRODUCE.md` | Step-by-step reproduction guide / agent prompt |
 | `install.sh` | One-shot installer that wires it all up |
 
